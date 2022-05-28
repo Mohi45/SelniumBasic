@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.selenium.practice.CheckBoxRadioTest">
+        <methods>
+          <include name="Test002_DropDown_Ajax_Jquery"/>
+          <include name="setUp"/>
+          <include name="Test001_clickonRadioAndCheckBox"/>
+          <include name="setup"/>
+          <include name="clickEscButton"/>
+          <include name="Test003_BootPopUp"/>
+        </methods>
+      </class> <!-- com.selenium.practice.CheckBoxRadioTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

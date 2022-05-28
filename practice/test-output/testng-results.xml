@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-29T00:04:34 IST" name="Default suite" finished-at="2022-05-29T00:04:47 IST" duration-ms="12480">
+    <groups>
+    </groups>
+    <test started-at="2022-05-29T00:04:34 IST" name="Default test" finished-at="2022-05-29T00:04:47 IST" duration-ms="12480">
+      <class name="com.selenium.practice.CheckBoxRadioTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:33 IST" name="setUp" finished-at="2022-05-29T00:04:34 IST" duration-ms="977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:34 IST" name="setup" finished-at="2022-05-29T00:04:39 IST" duration-ms="5179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="clickEscButton()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:39 IST" name="clickEscButton" finished-at="2022-05-29T00:04:39 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickEscButton -->
+        <test-method signature="Test001_clickonRadioAndCheckBox()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:39 IST" name="Test001_clickonRadioAndCheckBox" finished-at="2022-05-29T00:04:40 IST" duration-ms="998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test001_clickonRadioAndCheckBox -->
+        <test-method is-config="true" signature="clickEscButton()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:40 IST" name="clickEscButton" finished-at="2022-05-29T00:04:40 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickEscButton -->
+        <test-method signature="Test002_DropDown_Ajax_Jquery()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:40 IST" name="Test002_DropDown_Ajax_Jquery" finished-at="2022-05-29T00:04:41 IST" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test002_DropDown_Ajax_Jquery -->
+        <test-method is-config="true" signature="clickEscButton()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:41 IST" name="clickEscButton" finished-at="2022-05-29T00:04:41 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickEscButton -->
+        <test-method signature="Test003_BootPopUp()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:41 IST" name="Test003_BootPopUp" finished-at="2022-05-29T00:04:42 IST" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test003_BootPopUp -->
+        <test-method is-config="true" signature="clickEscButton()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:42 IST" name="clickEscButton" finished-at="2022-05-29T00:04:42 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickEscButton -->
+        <test-method signature="Test004_JavaScriptAlert()[pri:0, instance:com.selenium.practice.CheckBoxRadioTest@130c12b7]" started-at="2022-05-29T00:04:42 IST" name="Test004_JavaScriptAlert" finished-at="2022-05-29T00:04:47 IST" duration-ms="4892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test004_JavaScriptAlert -->
+      </class> <!-- com.selenium.practice.CheckBoxRadioTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
