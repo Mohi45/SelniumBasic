@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeSuite;
 
 import com.selenium.practice.BrowserType;
@@ -17,7 +18,11 @@ private static List<WebDriver> driverPool=new ArrayList<WebDriver>();
 	@BeforeSuite
 	public void setUp() {
 		System.out.println("I am here");
-		WebDriverManager.chromedriver().setup();
+
+		//WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("useAutomationExtension", false);
+		WebDriverManager.chromedriver().capabilities(options).create();
 		WebDriverManager.edgedriver().setup();
 	}
 
