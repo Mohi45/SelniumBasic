@@ -2,6 +2,7 @@ package resources;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import com.selenium.practice.BrowserType;
@@ -23,10 +24,12 @@ public class DriverFactory {
 	private static ThreadLocal<WebDriver> threadLocal=new ThreadLocal<WebDriver>();
 	
 	public WebDriver getDriver(BrowserType type) {
-		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+
 		switch (type) {
 		case CHROME:
-			threadLocal.set(new ChromeDriver());
+			threadLocal.set(new ChromeDriver(options));
 			break;
 			
 		case EDGE:

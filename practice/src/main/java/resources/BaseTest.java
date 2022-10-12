@@ -19,14 +19,13 @@ private static List<WebDriver> driverPool=new ArrayList<WebDriver>();
 	public void setUp() {
 		System.out.println("I am here");
 
-		//WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.setExperimentalOption("useAutomationExtension", false);
-		WebDriverManager.chromedriver().capabilities(options).create();
-		WebDriverManager.edgedriver().setup();
+		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.edgedriver().setup();
 	}
 
 	public WebDriver getDriver(BrowserType type,String baseUrl) {
+
+
 		WebDriver driver=DriverFactory.getInstance().getDriver(type);
 		driverPool.add(driver);
 		driver.get(baseUrl);
