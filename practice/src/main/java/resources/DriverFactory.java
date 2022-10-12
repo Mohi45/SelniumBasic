@@ -29,7 +29,7 @@ public class DriverFactory {
 
 		switch (type) {
 		case CHROME:
-			threadLocal.set(new ChromeDriver(options));
+			threadLocal.set(new ChromeDriver());
 			break;
 			
 		case EDGE:
