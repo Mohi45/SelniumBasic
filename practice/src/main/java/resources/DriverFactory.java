@@ -25,11 +25,12 @@ public class DriverFactory {
 	
 	public WebDriver getDriver(BrowserType type) {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+		options.addArguments("--whitelisted-ips");
+		//options.addArguments("--headless");
 
 		switch (type) {
 		case CHROME:
-			threadLocal.set(new ChromeDriver());
+			threadLocal.set(new ChromeDriver(options));
 			break;
 			
 		case EDGE:
