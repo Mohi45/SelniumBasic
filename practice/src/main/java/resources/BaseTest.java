@@ -19,7 +19,7 @@ private static List<WebDriver> driverPool=new ArrayList<WebDriver>();
 	public void setUp() {
 		System.out.println("I am here");
 
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().driverVersion("106.0.5249.119").setup();
 		//WebDriverManager.edgedriver().setup();
 	}
 
