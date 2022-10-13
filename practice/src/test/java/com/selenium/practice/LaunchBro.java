@@ -19,6 +19,7 @@ public class LaunchBro {
         options.addArguments("--disable-extensions"); // disabling extensions
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--no-sandbox"); // Bypass OS security model
+        options.addArguments("--headless");
         System.out.println("4 Line inside Method !!!");
         WebDriver driver = new ChromeDriver(options);
         System.out.println("5 Line inside Method !!!");
