@@ -2,24 +2,27 @@ package com.selenium.practice;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class LaunchBro {
     @Test
     public static void main()
     {
-        System.out.println("1st Line inside Method !!!");
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome-stable");
-        System.out.println("2nd Line inside Method !!!");
-        // Instantiate a ChromeDriver class.
-        WebDriver driver = new ChromeDriver();
-        System.out.println("3rd Line inside Method !!!");
-
-        // Maximize the browser
-        driver.manage().window().maximize();
-        System.out.println("4th Line inside Method !!!");
-        // Launch Website
-        driver.get("https://www.geeksforgeeks.org/");
-        System.out.println("5th Line inside Method !!!");
+        System.out.println("1 Line inside Method !!!");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.out.println("2 Line inside Method !!!");
+        ChromeOptions options = new ChromeOptions();
+        System.out.println("3 Line inside Method !!!");
+        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--no-sandbox"); // Bypass OS security model
+        System.out.println("4 Line inside Method !!!");
+        WebDriver driver = new ChromeDriver(options);
+        System.out.println("5 Line inside Method !!!");
+        driver.get("https://google.com");
     }
 }
