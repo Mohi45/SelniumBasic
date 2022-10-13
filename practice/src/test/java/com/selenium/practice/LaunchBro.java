@@ -9,7 +9,7 @@ public class LaunchBro {
     public static void main()
     {
         System.out.println("1st Line inside Method !!!");
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome-stable");
         System.out.println("2nd Line inside Method !!!");
         // Instantiate a ChromeDriver class.
         WebDriver driver = new ChromeDriver();
